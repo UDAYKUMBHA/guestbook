@@ -2,7 +2,7 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js'
 
 // ✅ Supabase credentials
-const supabaseUrl = 'https://lanfpeteyeffdamjogxc.supabase.co'
+const supabaseUrl = 'https://lanpfeteyeffdaljogxc.supabase.co'
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhbnBmZXRleWVmZmRhbGpvZ3hjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQwNTM5MzMsImV4cCI6MjA2OTYyOTkzM30.6RZIGqQ8ehcq2v93gwxif2UCmG0lkccvZ0j__W8BkQU'
 
 // ✅ Initialize Supabase
@@ -49,3 +49,4 @@ async function loadMessages() {
 }
 
 loadMessages()
+
