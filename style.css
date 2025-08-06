@@ -1,18 +1,5 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 600px;
-  margin: auto;
-  padding: 1rem;
-}
-
 form {
-  display: flex;
+  display: none; /* Form hidden until user logs in */
   flex-direction: column;
   gap: 0.5rem;
-}
-
-#messages {
-  margin-top: 2rem;
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
 }
