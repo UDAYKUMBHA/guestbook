@@ -6,14 +6,23 @@
 </head>
 <body>
   <h1>Guestbook</h1>
+
+  <!-- 🔐 Auth Button -->
+  <button id="auth-btn">Login</button>
+
+  <!-- ✅ Message Form (as it is) -->
   <form id="message-form">
     <input type="text" id="username" placeholder="Your name" required />
     <textarea id="content" placeholder="Your message" required></textarea>
     <button type="submit">Post Message</button>
   </form>
+
+  <!-- 📬 Messages Area -->
   <div id="messages"></div>
 
   <script type="module" src="main.js"></script>
 </body>
 </html>
+
+
 
