@@ -48,7 +48,7 @@ form.addEventListener('submit', async (e) => {
   }
 })
 
-// ✅ Login / Logout button
+// ✅ Login / Logout button (Updated with redirectTo option)
 authBtn.addEventListener('click', async () => {
   const session = await supabase.auth.getSession()
   const user = session.data.session?.user
@@ -59,7 +59,12 @@ authBtn.addEventListener('click', async () => {
   } else {
     const email = prompt("Enter your email to login:")
     if (email) {
-      const { error } = await supabase.auth.signInWithOtp({ email })
+      const { error } = await supabase.auth.signInWithOtp({ 
+        email,
+        options: {
+          redirectTo: 'https://udaykumbha.github.io/guestbook/' // 👉 यह crucial line है
+        }
+      })
       if (error) alert("Login error: " + error.message)
       else alert("Check your email for login link!")
     }
@@ -80,5 +85,6 @@ async function updateUI() {
   }
 }
 updateUI()
+
 
 
